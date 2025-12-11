@@ -1,0 +1,22 @@
+public class EvenNumbers {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the starting number: ");
+        int start = sc.nextInt();
+        System.out.print("Enter the ending number: ");
+        int end = sc.nextInt();
+
+        int[] evenNumbers = new int[(end - start) / 2 + 1];
+        int count = 0;
+
+        int i = start;
+        while (i <= end) {
+            if (i % 2 == 0) {
+                evenNumbers[count] = i;
+                count++;
+            }
+            i++;
+        }
+    
